@@ -1,5 +1,20 @@
-<form action="/api/register" method="POST">
-    <input name="name" placeholder="Name">
-    <input name="email" placeholder="Email">
-    <button type="submit">Sign up</button>
-</form>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+</head>
+
+<body>
+    <form action="/api/register" method="POST">
+        <h1>Регистрация</h1>
+        <input name="name" type="text" placeholder="Введите имя" required>
+        <input name="email" type="email" placeholder="Введите email" required>
+        <input name="password" type="password" placeholder="Введите пароль" required>
+        <button type="submit">Зарегистрироваться</button>
+    </form>
+</body>
+
+</html>

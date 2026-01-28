@@ -1,34 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>Крестики-нолики</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-tac-toe</title>
 </head>
 
 <body>
-    <h1>Игра загружена!</h1>
-    <p id="status">Ожидание подключения...</p>
-
-    <a href="/register.html">Регистрация</a>
-
-    <script>
-        const socket = new WebSocket("ws://localhost:8080/ws/test");
-
-        socket.onopen = function (event) {
-            document.getElementById("status").textContent = "Подключено!";
-            socket.send("Привет от браузера!");
-        };
-
-        socket.onmessage = function (event) {
-            alert("Сервер ответил: " + event.data);
-        };
-
-        socket.onerror = function (error) {
-            document.getElementById("status").textContent = "Ошибка!";
-            console.error("WebSocket error:", error);
-        };
-    </script>
+    <h1>Tic-tac-toe</h1>
+    <form action="login.html">
+        <button>Войти</button>
+    </form>
+    <a href="register.html">Зарегистрироваться</a>
 </body>
 
 </html>
